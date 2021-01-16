@@ -1,15 +1,15 @@
 import React from "react";
 import Square from "./Square";
 
-export default class Board extends React.Component{
-  renderSquare(i){
-    return <Square value={i}/>;
+export default class Board extends React.Component {
+  renderSquare(i) {
+    return <Square value={i} />;
   }
 
-  render(){
-    const status = 'Next player: X';
+  render() {
+    const status = "Next player: X";
 
-    return(
+    return (
       <div>
         <div className="status">{status}</div>
         <div className="board-row">
